@@ -182,8 +182,8 @@ label {
     vertical-align: middle;
     white-space: nowrap;
 }
-.btn :hover{
-
+.btn:hover{
+	opacity: 0.8;
 }
 
 
@@ -235,5 +235,82 @@ label {
 .btn.btn-three{
 	background-color: #4B4BEB;
 	color: #A06EFF;
+}
+
+.team-slider.owl-carousel .owl-nav div.owl-next, 
+.team-slider.owl-carousel .owl-nav div.owl-prev{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    left: 15px;
+    top: 50%;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.team-slider.owl-carousel .owl-nav div.owl-next{
+    right: 15px;
+    left: auto;
+}
+.team-slider.owl-carousel .owl-nav div.owl-next::after, 
+.team-slider.owl-carousel .owl-nav div.owl-prev::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: -1;
+    border-radius: 50%;
+}
+.team-slider.owl-carousel .owl-nav div.owl-next i, 
+.team-slider.owl-carousel .owl-nav div.owl-prev i{
+    background: #A06EFF;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: 0.3s;
+}
+
+/*hover-efect*/
+.team-slider.owl-carousel:hover .owl-nav div.owl-next, 
+.team-slider.owl-carousel:hover .owl-nav div.owl-prev{
+    opacity: 1;
+    visibility: visible;
+}
+.team-slider.owl-carousel .owl-nav div.owl-next:hover:after, 
+.team-slider.owl-carousel .owl-nav div.owl-prev:hover:after{
+    opacity: 0.3;
+    visibility: visible;
+}
+.team-slider.owl-carousel .owl-nav div.owl-next:hover i, 
+.team-slider.owl-carousel .owl-nav div.owl-prev:hover i{
+    background: #A06EFF;
+    color: #fff;
+}
+.team-slider .owl-dots {
+    text-align: center;
+}
+.team-slider .owl-dots .owl-dot {
+    height: 5px;
+    width: 30px;
+    background: #ddd;
+    margin: 5px;
+    display: inline-block;
+    outline: none;
+}
+.team-slider .owl-dot.active {
+    background: #A06EFF;
 }
 
