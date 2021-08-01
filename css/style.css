@@ -190,12 +190,17 @@ label {
 /*Start team area */
 .team{
 	background-color: #F4F4F4;
-	padding: 130px 0;
+	padding: 90px 0;
+	text-align: center;
 }
 .team-item{
 	background-color: #fff;
 	box-shadow: 4px 4px 2px rgba(0, 0, 0, 7%);
 	border-radius: 4px;
+	margin: 20px 0;
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .team-thumb{
 	overflow: hidden;
